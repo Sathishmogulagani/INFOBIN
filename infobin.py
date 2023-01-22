@@ -40,7 +40,7 @@ try:
         #print(app_name)
         if(app_name and psw_name and len(psw_name)>7):
             try:
-                con=mc.connect(host="localhost",user="root",passwd='tozo608',database='INFOBIN')
+                con=mc.connect(host="localhost",user="root",passwd='tozo608',database='INFOBIN')#CHANGE YOUR ROOT NAME ,PASSWORD , DATABASE NAME IN ALL THESE LINE
                 cur=con.cursor()
                 Q="insert into store(application,password) values(%s,%s)"
                 val=(app_name,psw_name)
